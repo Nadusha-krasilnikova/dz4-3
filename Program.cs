@@ -2,13 +2,13 @@
 int[]arr=new int[123];
 for (int i=0; i<arr.Length; i++)
 {
-    arr[i]=new Random().Next(0,100);
+    arr[i]=new Random().Next(0,1000);
 Console.Write($" {arr[i]} ");
 }
 int c=0;
 for (int i=0; i<arr.Length; i++)
 { 
-    if(arr[i]>=10)
+    if((arr[i]>=10)&& (arr[i]<100))
     c++;
 }
     
